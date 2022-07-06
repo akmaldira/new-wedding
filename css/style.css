@@ -318,9 +318,15 @@ h4 {
     display: flex;
     row-gap: 4rem;
     flex-wrap: wrap;
-    justify-content: center;
+    align-items: flex-end;
     margin: 3rem 0rem;
 }
+
+@media screen and (max-width: 800px) {
+    .gift-card {
+        justify-content: center;
+    }
+  }
 
 .gift-card .card {
     display: flex;
@@ -330,6 +336,10 @@ h4 {
 
 .card img {
     width: 20rem;
+}
+
+.card .mandiri {
+    width: 25rem;
 }
 
 .card h3 {
@@ -403,9 +413,12 @@ h4 {
     font-family: 'Caveat', cursive;
 }
 
+.home7 h2 {
+    margin-bottom: 9rem;
+}
+
 .nav-container {
     display: flex;
-    background-color: red;
     width: 100%;
     height: 30rem;
     position: fixed;
@@ -419,6 +432,28 @@ h4 {
     flex-direction: column;
     justify-content: center;
     padding: 2.5%;
+}
+
+.nav .music-off {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #946e2a;
+    position: absolute;
+    right: 1rem;
+    bottom: 7rem;
+    display: flex;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-off .music-btn {
+    width: 30px;
+}
+.music-off .music-btn:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (min-width: 800px) {
@@ -459,3 +494,31 @@ h4 {
     transform: scale(1.2);
 }
 
+#musik {
+    height: 10rem;
+    width: 10rem;
+    display: none;
+}
+
+.countdown {
+    width: 20rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: -2rem;
+}
+
+.countdown div {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: #deecfc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #946e2a;
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+}

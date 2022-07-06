@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding</title>
+    <title>Dipra & Ariska</title>
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +21,28 @@
     </div>
     <div class="main">
         <img id="1" class="header-img" src="./images/header.png">
+        <video id="musik" display="hidden" loop autoplay>
+            <source src="./video/tulus.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
         <div class="home">
-            <audio id="musik" autoplay>
-                <source src="./music/Tulus.mp3" type="audio/mpeg">
-            </audio>
             <h1>WEDDING INVITATION</h1>
             <h2>DIPRA & ARISKA</h2>
             <img class="home-img" src="./images/profile2.png">
             <p>We invited you you to celebrate our wedding</p>
             <h3>Sabtu, 16 July 2022</h3>
             <br>
-            <p id="countdown"></p>
+            <div class="countdown">
+                <div class="day">
+
+                </div>
+                <div class="hour">
+
+                </div>
+                <div class="min">
+
+                </div>
+            </div>
             <img class="bottom-img" src="./images/bottom.png">
         </div>
         <div class="home2" id="2">
@@ -49,7 +60,7 @@
                 <div class="dipra-card">
                     <img class="profile-pic" src="./images/profile-a.png">
                     <h3>Ariska</h3>
-                    <p>Putri dari Bapak Agusman & Ibu Neneng Rusyati</p>
+                    <p>Putri dari Bapak Idris Mulyasa & Ibu Tri Astuti</p>
                 </div>
             </div>
             <div class="text">
@@ -109,7 +120,7 @@
                     <button onclick="copyEvent('p1')">Copy</button>
                 </div>
                 <div class="card">
-                    <img src="./images/Bank_Mandiri_logo_2016.svg.png">
+                    <img class="mandiri" src="./images/Bank_Mandiri_logo_2016.svg.png">
                     <h1 id="p2">0700009944898</h1>
                     <h3>A/n Ariska Setiani</h3>
                     <button onclick="copyEvent('p2')">Copy</button>
@@ -129,6 +140,9 @@
         </div>
         <div class="nav-container">
             <div class="nav">
+                <div class="music-off">
+                    <img class="music-btn">
+                </div>
                 <ul>
                     <a href="#1"><img src="./images/icon/WDP_03_HOME.png" alt="home"></a>
                     <a href="#2"><img src="./images/icon/WDP_03_COUPLE.png" alt="love"></a>
