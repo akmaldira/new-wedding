@@ -6,6 +6,14 @@ const musicBtn1 = document.querySelector('.music-btn')
 nav.classList.add('load')
 document.querySelector('body').style.overflowY = 'hidden'
 
+var params = new window.URLSearchParams(window.location.search);
+var u = params.get('u');
+if (u==null || u=="") {
+    document.getElementById('guest').innerHTML = "Kepada Bpk/Ibu/Saudara/i";
+} else {
+    document.getElementById('guest').innerHTML = `Kepada ${u}`;
+}
+
 
 invitationBtn.addEventListener('click', () => {
     invitationCard.classList.add('active')
