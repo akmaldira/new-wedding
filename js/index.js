@@ -1,18 +1,20 @@
 const invitationCard = document.querySelector('.invitation-card')
 const invitationBtn = document.querySelector('.invitation-btn')
 const nav = document.querySelector('.nav')
-document.getElementById('musik').play()
 
-document.addEventListener('DOMContentLoaded', () => {
-    nav.classList.add('load')
-    document.querySelector('body').style.overflowY = 'auto'
-})
 
 invitationBtn.addEventListener('click', () => {
     invitationCard.classList.add('active')
     nav.classList.remove('load')
     document.querySelector('body').style.overflowY = 'auto'
+    document.getElementById('musik').play();
 })
+
+document.addEventListener('DOMContentLoaded', () => {
+    nav.classList.add('load')
+    document.querySelector('body').style.overflowY = 'hidden'
+})
+
 
 function copyEvent(id)
     {
