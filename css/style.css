@@ -1,0 +1,461 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.invitation-card {
+    background-image: url('../images/background1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #37419e;
+    position: absolute;
+    transition: 1s;
+    z-index: 99999;
+}
+
+.invitation-card.active {
+    margin-top: -100vh;
+}
+
+.profile-img {
+    width: 18rem;
+    height: 18rem;
+}
+
+.name {
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+h4 {
+    text-align: center;
+    margin: 2rem 3rem;
+}
+
+.invitation-btn {
+    height: 3rem;
+    width: 9rem;
+    border-radius: 0.8rem;
+    border-style: none;
+    font-family: 'Caveat', cursive;
+    font-size: 1.4rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #37419e;
+    color: rgb(255, 251, 244);
+    margin-top: 7rem;
+}
+
+.invitation-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.invitation-btn:active {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.main {
+    background-color: #ddf6f7;
+}
+
+.home-img {
+    width: 25rem;
+}
+
+.header-img {
+    width: 100%;
+    position: relative;
+    height: 6rem;
+    opacity: 0.6;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -1rem;
+    z-index: 1;
+}
+
+.home h1 {
+    font-family: 'Arvo', serif;
+    margin-bottom: 0.7rem;
+    color: #946e2a;
+    font-size: 1.5rem;
+}
+
+.home h2 {
+    font-family: 'Arvo', serif;
+    color: #946e2a;
+}
+
+.home p {
+    font-family: 'Caveat', cursive;
+    color: #946e2a;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.home h3 {
+    font-family: 'Gentium Book Plus', serif;
+    color: #946e2a;
+    font-size: 2rem;
+}
+
+.home .bottom-img {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.6;
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.home2 {
+    width: 100%;
+    background-color: #deecfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #946e2a;
+}
+
+.home2 h1 {
+    font-family: 'Caveat', cursive;
+}
+
+.home2 h3 {
+    text-align: center;
+    margin: 1.1rem 1rem 1.5rem 1rem;
+}
+
+.home2 .profile-pic {
+    width: 15rem;
+}
+
+.home2 .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text img {
+    width: 26rem;
+}
+
+.text h1,h2 {
+    text-align: center;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+}
+
+.foto-card {
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+
+.foto-card .dipra-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dipra-card h3 {
+    font-size: 1.5rem;
+}
+
+.dipra-card p {
+    margin-top: -1.4rem;
+    font-size: 1.2rem;
+}
+
+.foto-card .dan {
+    width: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddf6f7;
+}
+
+.home4 h1 {
+    color: #946e2a;
+    font-family: 'Caveat', cursive;
+    margin-bottom: 3rem;
+}
+
+.home4 .wrapper {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.6;
+}
+
+.before {
+    display: flex;
+    row-gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0rem;
+    column-gap: 2rem;
+}
+
+.before .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 1rem 0;
+}
+
+.card h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-family: 'Arvo', serif;
+    color: #946e2a;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    justify-content: center;
+    background-color: #ddf6f7;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  .column img:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 30%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 30%;
+      max-width: 100%;
+    }
+  }
+
+.home4 .bottom-img {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.6;
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.home4 video {
+    width: 80%;
+}
+
+.home5 {
+    width: 100%;
+    background-color: #deecfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home5 h1 {
+    color: #946e2a;
+    font-family: 'Caveat', cursive;
+}
+
+.gift-card {
+    display: flex;
+    row-gap: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 3rem 0rem;
+}
+
+.gift-card .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img {
+    width: 20rem;
+}
+
+.card h3 {
+    color: #946e2a;
+}
+
+.card:nth-child(2) img {
+    margin-left: 4rem;
+}
+
+.card button {
+    width: 4rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-color: #ddf6f7;
+    outline: none;
+}
+
+.home6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home6 h1 {
+    color: #946e2a;
+    font-family: 'Caveat', cursive;
+}
+
+.home6 .wrapper {
+    width: 100%;
+    height: 10rem;
+    opacity: 0.6;
+}
+
+.home6 .maps {
+    width: 90%;
+    height: 30rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.home6 .bottom-img {
+    margin-top: 5rem;
+    width: 100%;
+    height: 10rem;
+    opacity: 0.6;
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.home7 {
+    width: 100%;
+    background-color: #deecfc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #946e2a;
+}
+
+.home7 h3 {
+    text-align: center;
+    margin: 0 1rem;
+
+}
+.home7 h1 {
+    font-family: 'Caveat', cursive;
+}
+
+.nav-container {
+    display: flex;
+    background-color: red;
+    width: 100%;
+    height: 30rem;
+    position: fixed;
+}
+
+.nav {
+    width: 95%;
+    position: fixed;
+    top: 88%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5%;
+}
+
+@media screen and (min-width: 800px) {
+    .nav {
+        top: 84%;
+    }
+  }
+
+@media screen and (min-width: 1024px) {
+    .nav {
+        top: 84%;
+    }
+  }
+
+.nav.load {
+    display: none;
+}
+
+.nav ul {
+    display: flex;
+    height: 9vh;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.nav ul img {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nav ul img:hover {
+    transform: scale(1.2);
+}
+

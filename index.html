@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Gentium+Book+Plus&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="invitation-card">
+        <img class="profile-img" src="./images/profile1.png" alt="profile">
+        <h1 class="name">Dipra & Ariska</h1>
+        <h3>Kepada Bpk/Ibu/Saudara/i</h3>
+        <h4>Tanpa mengurangi rasa hormat, kami mengundang anda untuk hadir di acara pernikahan kami.</h4>
+        <button class="invitation-btn">Buka Undangan</button>
+    </div>
+    <div class="main">
+        <img id="1" class="header-img" src="./images/header.png">
+        <div class="home">
+            <audio id="musik" autoplay>
+                <source src="./music/Tulus.mp3" type="audio/mpeg">
+            </audio>
+            <h1>WEDDING INVITATION</h1>
+            <h2>DIPRA & ARISKA</h2>
+            <img class="home-img" src="./images/profile2.png">
+            <p>We invited you you to celebrate our wedding</p>
+            <h3>Sabtu, 16 July 2022</h3>
+            <br>
+            <p id="countdown"></p>
+            <img class="bottom-img" src="./images/bottom.png">
+        </div>
+        <div class="home2" id="2">
+            <h1>Assalamualaikum Wr Wb</h1>
+            <h3>Tanpa mengurangi rasa hormat, kami bermaksud mengundang Bapak/Ibu/Saudara/I untuk menghadiri acara pernikahan kami:</h3>
+            <div class="foto-card">
+                <div class="dipra-card">
+                    <img class="profile-pic" src="./images/profile-d.png">
+                    <h3>Dipra</h3>
+                    <p>Putra dari Bapak Agusman & Ibu Neneng Rusyati</p>
+                </div>
+                <div class="dan">
+                    <h1>&</h1>
+                </div>
+                <div class="dipra-card">
+                    <img class="profile-pic" src="./images/profile-a.png">
+                    <h3>Ariska</h3>
+                    <p>Putri dari Bapak Agusman & Ibu Neneng Rusyati</p>
+                </div>
+            </div>
+            <div class="text">
+                <img class="top-border" src="./images/top-border.png" >
+                <h1>سُبۡحٰنَ الَّذِىۡ خَلَقَ الۡاَزۡوَاجَ كُلَّهَا مِمَّا تُنۡۢبِتُ الۡاَرۡضُ وَمِنۡ اَنۡفُسِهِمۡ وَمِمَّا لَا يَعۡلَمُوۡنَ</h1>
+                <h2>Mahasuci (Allah) yang telah menciptakan semuanya berpasang-pasangan, baik dari apa yang ditumbuhkan oleh bumi dan dari diri mereka sendiri, maupun dari apa yang tidak mereka ketahui.</h2>
+                <img class="bot-border" src="./images/bot-border.png" >
+            </div>
+        </div>
+        <div class="home4">
+            <img class="wrapper" src="./images/bottom.png">
+            <h1 id="4">Our Galery</h1>
+            <div class="row">
+                <div class="column">
+                  <img class="potrait" src="./images/kaipa/foto (1).jpeg">
+                  <img class="landscape" src="./images/kaipa/foto (1).JPG">
+                  <img class="potrait" src="./images/kaipa/foto (2).jpeg">
+                  <img class="landscape" src="./images/kaipa/foto (8).JPG">
+                  <img class="landscape" src="./images/kaipa/foto (9).JPG">
+
+                </div>
+                <div class="column">
+                  <img class="potrait" src="./images/kaipa/foto (3).JPG">
+                  <img class="potrait" src="./images/kaipa/foto (2).JPG">
+                  <img class="landscape" src="./images/kaipa/foto (4).jpeg">
+                  <img class="potrait" src="./images/kaipa/foto (4).JPG">
+                  <img class="potrait" src="./images/kaipa/foto (5).JPG">
+                </div>
+            </div>
+            <div class="before">
+                <div class="card">
+                    <h3>Akad Nikah</h3>
+                    <p>Minggu, 5 Juni 2022</p>
+                    <p>Pukul 10.00 WIB</p>
+                    <p>Aula Rw 05 Poncol Jaya</p>
+                </div>
+                <div class="card">
+                    <h3>Resepsi</h3>
+                    <p>Sabtu, 16 July 2022</p>
+                    <p>Pukul 11.00 WIB</p>
+                    <p>Kediaman Mempelai Pria</p>
+                </div>
+            </div>
+            <video controls>
+                <source src="./video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img class="bottom-img" src="./images/bottom.png">
+        </div>
+        <div class="home5" id="5">
+            <h1>Amplop Digital</h1>
+            <div class="gift-card">
+                <div class="card">
+                    <img src="./images/BNI_logo.svg">
+                    <h1 id="p1">1365026878</h1>
+                    <h3>A/n Dipra Maulana Rusman</h3>
+                    <button onclick="copyEvent('p1')">Copy</button>
+                </div>
+                <div class="card">
+                    <img src="./images/Bank_Mandiri_logo_2016.svg.png">
+                    <h1 id="p2">0700009944898</h1>
+                    <h3>A/n Ariska Setiani</h3>
+                    <button onclick="copyEvent('p2')">Copy</button>
+                </div>
+            </div>
+        </div>
+        <div class="home6">
+            <img class="wrapper" src="./images/bottom.png">
+            <h1 id="6">My Location</h1>
+            <iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d556.4636514144769!2d106.82033137835427!3d-6.2608246610888685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x874006582719c4c8!2zNsKwMTUnMzkuMCJTIDEwNsKwNDknMTQuNSJF!5e0!3m2!1sid!2sid!4v1656859832455!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <img class="bottom-img" src="./images/bottom.png">
+        </div>
+        <div class="home7">
+            <h3>Terimakasih atas kehadiran dan doa restunya, dari Bapak dan Ibu. Kami ucapkan terimakasih</h3>
+            <h1>Waallaikumsalam Wr Wb</h1>
+            <h2>PROTOKOL KESEHATAN</h2>
+        </div>
+        <div class="nav-container">
+            <div class="nav">
+                <ul>
+                    <a href="#1"><img src="./images/icon/WDP_03_HOME.png" alt="home"></a>
+                    <a href="#2"><img src="./images/icon/WDP_03_COUPLE.png" alt="love"></a>
+                    <a href="#4"><img src="./images/icon/WDP_03_EVENT.png" alt="event"></a>
+                    <a href="#5"><img src="./images/icon/WDP_03_WISHES.png" alt="wishes"></a>
+                    <a href="#6"><img src="./images/icon/WDP_03_GALLERY.png" alt="galery"></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
