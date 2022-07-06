@@ -1,6 +1,10 @@
 const invitationCard = document.querySelector('.invitation-card')
 const invitationBtn = document.querySelector('.invitation-btn')
 const nav = document.querySelector('.nav')
+const musicBtn = document.querySelector('.music-off')
+const musicBtn1 = document.querySelector('.music-btn')
+nav.classList.add('load')
+document.querySelector('body').style.overflowY = 'hidden'
 
 
 invitationBtn.addEventListener('click', () => {
@@ -8,11 +12,17 @@ invitationBtn.addEventListener('click', () => {
     nav.classList.remove('load')
     document.querySelector('body').style.overflowY = 'auto'
     document.getElementById('musik').play();
+    document.querySelector('.music-btn').setAttribute('src', './images/pause.png')
 })
 
-document.addEventListener('DOMContentLoaded', () => {
-    nav.classList.add('load')
-    document.querySelector('body').style.overflowY = 'hidden'
+musicBtn.addEventListener('click', () => {
+    if (document.getElementById('musik').paused) {
+        document.getElementById('musik').play();
+        document.querySelector('.music-btn').setAttribute('src', './images/pause.png')
+    } else {
+        document.getElementById('musik').pause();
+        document.querySelector('.music-btn').setAttribute('src', './images/play.png')
+    }
 })
 
 
@@ -40,6 +50,9 @@ var x = setInterval(function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
   
     // Display the result in the element with id="demo"
+    document.querySelector('.day').innerHTML = days + "d"
+    document.querySelector('.hour').innerHTML = hours  + "h"
+    document.querySelector('.min').innerHTML = minutes + "m"
     document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
   
